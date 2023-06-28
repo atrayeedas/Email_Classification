@@ -10,9 +10,9 @@ app = Flask(__name__)
 CORS(app)
 
 
-# @app.route("/")
-# def start():
-#   return render_template("index.html")
+@app.route("/")
+def start():
+    return render_template("index.html")
 
 
 @app.route("/spamcheck", methods=["POST", "GET"])
@@ -27,5 +27,5 @@ def spamcheck():
     return {"ServerMessage": result}
 
 
-# if __name__ == "__main__":
-# app.run(debug=True, port=5000)
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
