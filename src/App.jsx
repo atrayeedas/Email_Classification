@@ -14,7 +14,7 @@ function App() {
   const sendToSpamFilterMessage = async () => {
     //new Audio('./assets/click.wav').play();
 
-    const res = await fetch('https://spam-filtering.onrender.com:5000/spamcheck', {
+    const res = await fetch('https://spam-filtering.onrender.com/spamcheck', {
       method: "POST",
       body: JSON.stringify(textareaRef.current.value),
     });
