@@ -10,9 +10,9 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route("/")
+"""@app.route("/")
 def start():
-    return render_template("index.html")
+    return render_template("index.html")"""
 
 
 @app.route("/spamcheck", methods=["POST", "GET"])
